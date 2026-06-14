@@ -1,7 +1,7 @@
 # From Data to Dashboard: Retail Sales Intelligence (Excel & Power BI)
 
 > **The same dataset. Two tools. A story that gets sharper at every layer.**  
-> This project transforms 400+ raw retail transactions into a two-stage analytical system — starting with Excel for hands-on pivot analysis, then advancing to Power BI for enterprise-grade interactivity, DAX-powered metrics, and time intelligence.
+> This project transforms 400+ raw retail transactions into a two-stage analytical system: starting with Excel for hands-on pivot analysis, then advancing to Power BI for enterprise-grade interactivity, DAX-powered metrics, and time intelligence.
 
 ---
 
