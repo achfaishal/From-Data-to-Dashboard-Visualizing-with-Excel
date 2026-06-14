@@ -1,4 +1,4 @@
-# From Data to Dashboard: Retail Sales Intelligence — Excel & Power BI
+# From Data to Dashboard: Retail Sales Intelligence (Excel & Power BI)
 
 > **The same dataset. Two tools. A story that gets sharper at every layer.**  
 > This project transforms 400+ raw retail transactions into a two-stage analytical system — starting with Excel for hands-on pivot analysis, then advancing to Power BI for enterprise-grade interactivity, DAX-powered metrics, and time intelligence.
@@ -11,10 +11,10 @@ A fashion retail business operating across four Indonesian cities needed clarity
 
 **The questions this project answers:**
 
-- Which sales person and region are leading — and by how much?
+- Which sales person and region are leading and by how much?
 - Does running promotions generate incremental revenue, or just shift timing?
 - Is the customer base growing, or is the business running on retention alone?
-- How does performance move across the month — peaks, troughs, momentum?
+- How does performance move across the month peaks, troughs, momentum?
 
 ---
 
@@ -49,7 +49,7 @@ This project was built in two deliberate layers. Each tool was chosen for what i
 
 ---
 
-## Stage 1 — Excel Dashboard
+## Stage 1: Excel Dashboard
 
 ### What Was Built
 
@@ -95,20 +95,20 @@ This project was built in two deliberate layers. Each tool was chosen for what i
 
 ---
 
-## Stage 2 — Power BI Dashboard
+## Stage 2: Power BI Dashboard
 
 ### Why Power BI, and Why It Matters
 
-Excel established the analytical baseline. Power BI was introduced to go further — adding three capabilities that Excel fundamentally cannot replicate at scale:
+Excel established the analytical baseline. Power BI was introduced to go further adding three capabilities that Excel fundamentally cannot replicate at scale:
 
 **1. DAX Calculated Measures**
 Custom metrics built beyond raw aggregation: revenue contribution %, promo lift differential, and per-sales-person efficiency ratios. These aren't available through pivot tables alone.
 
 **2. Drill-Down Interactivity**
-Clicking any chart element dynamically filters every other visual on the canvas — turning a static report into a live diagnostic tool. Select "Jakarta" in the region chart and every other visual instantly scopes to Jakarta-only data.
+Clicking any chart element dynamically filters every other visual on the canvas turning a static report into a live diagnostic tool. Select "Jakarta" in the region chart and every other visual instantly scopes to Jakarta-only data.
 
 **3. Time Intelligence**
-Automated Month-to-Date (MTD) tracking and period-over-period growth metrics — built with DAX time intelligence functions. This transforms the daily sales line from a passive trend view into an active performance tracker.
+Automated Month-to-Date (MTD) tracking and period-over-period growth metrics built with DAX time intelligence functions. This transforms the daily sales line from a passive trend view into an active performance tracker.
 
 ### Dashboard Preview
 
@@ -118,25 +118,25 @@ Automated Month-to-Date (MTD) tracking and period-over-period growth metrics —
 
 ## Key Business Findings
 
-These are not just observations — they are decisions waiting to be made.
+These are not just observations they are decisions waiting to be made.
 
 ### 💰 Revenue is concentrated, not distributed
-**Dewi Lestari** and **Budi Santoso** significantly outpaced peers. **Jakarta alone generated Rp 11.4M** — nearly double Surabaya and Medan combined. The implication: before expanding to new cities, the business should diagnose what is working in Jakarta and systematically replicate it elsewhere.
+**Dewi Lestari** and **Budi Santoso** significantly outpaced peers. **Jakarta alone generated Rp 11.4M** nearly double Surabaya and Medan combined. The implication: before expanding to new cities, the business should diagnose what is working in Jakarta and systematically replicate it elsewhere.
 
 ### 🛒 Online wins volume. Offline wins value.
-Online channel captured **56 transactions vs. 28 offline** — a 2:1 ratio. But offline transactions carried higher individual ticket sizes. Scaling online without protecting offline risks trading margin for volume — a net negative for a fashion business where average order value matters.
+Online channel captured **56 transactions vs. 28 offline** a 2:1 ratio. But offline transactions carried higher individual ticket sizes. Scaling online without protecting offline risks trading margin for volume — a net negative for a fashion business where average order value matters.
 
 ### 👗 Rok leads volume, but category margin tells the full story
-With **84 transactions**, Rok led all categories. Whether volume leadership translates to revenue leadership depends on average selling price per SKU — a gap that the Power BI DAX measures are positioned to fill.
+With **84 transactions**, Rok led all categories. Whether volume leadership translates to revenue leadership depends on average selling price per SKU a gap that the Power BI DAX measures are positioned to fill.
 
 ### 🔁 Early retention signal is real
-**Returning customers (49) outnumbered new customers (35)** in the first month of observation. A 58% repeat rate in month one is a healthy anchor — but the trend over subsequent months will reveal whether this is organic loyalty or the tail end of an acquisition campaign.
+**Returning customers (49) outnumbered new customers (35)** in the first month of observation. A 58% repeat rate in month one is a healthy anchor but the trend over subsequent months will reveal whether this is organic loyalty or the tail end of an acquisition campaign.
 
 ### 🎯 Promos are channelled online — but ROI is unverified
 Promo transactions accounted for **~36% of all sales**, skewing disproportionately toward online. The business doesn't yet know whether these are incremental purchases or discounted replacements of full-price intent. The Promo × Channel cross-tab built in Stage 1 creates the foundation to answer this with the next month's data.
 
 ### 💳 Transfer dominates, but E-Wallet momentum is the trend to watch
-Bank transfer led payment methods, followed by E-Wallet and Cash. As Indonesian consumers increasingly migrate to GoPay, OVO, and DANA, the payment method split is a leading indicator of digital customer maturity — and a variable that affects checkout conversion rates.
+Bank transfer led payment methods, followed by E-Wallet and Cash. As Indonesian consumers increasingly migrate to GoPay, OVO, and DANA, the payment method split is a leading indicator of digital customer maturity and a variable that affects checkout conversion rates.
 
 ---
 
@@ -173,17 +173,17 @@ From-Data-to-Dashboard-Visualizing-with-Excel/
 
 March 2025 is the baseline. With recurring monthly data, this system evolves into:
 
-- **Month-over-month trend tracking** — is Jakarta's dominance growing or narrowing?
-- **Promo ROI calculation** — revenue lift vs. discount cost, broken down by channel
-- **Sales person consistency analysis** — one strong month vs. repeatable performance
-- **Forecasting layer** — extend to Python/Prophet for demand-side projection
+- **Month-over-month trend tracking** is Jakarta's dominance growing or narrowing?
+- **Promo ROI calculation** revenue lift vs. discount cost, broken down by channel
+- **Sales person consistency analysis** one strong month vs. repeatable performance
+- **Forecasting layer** extend to Python/Prophet for demand-side projection
 
 ---
 
 ## About
 
 **Achmad Faishal**  
-Ekonomi Pembangunan — FEB UPN "Veteran" Yogyakarta
+Ekonomi Pembangunan | FEB UPN "Veteran" Yogyakarta
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/achmad-faishal-062313274/)
 
