@@ -7,7 +7,7 @@
 
 ## The Business Context
 
-A fashion retail business operating across four Indonesian cities needed clarity on its March 2025 performance. Four sales representatives. Two channels. Five product categories. Hundreds of transactions — and no clear picture of what was actually driving revenue.
+A fashion retail business operating across four Indonesian cities needed clarity on its March 2025 performance. Four sales representatives. Two channels. Five product categories. Hundreds of transactions and no clear picture of what was actually driving revenue.
 
 **The questions this project answers:**
 
