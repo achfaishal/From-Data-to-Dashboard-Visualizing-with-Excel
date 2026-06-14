@@ -57,7 +57,7 @@ This project was built in two deliberate layers. Each tool was chosen for what i
 |---|---|
 | **Data Cleaning** | Standardized inconsistent casing, trimmed whitespace, enforced uniform labels |
 | **Pivot Tables** | 9 tables across sales person, region, category, channel, promo, payment, customer type, date |
-| **Charts** | 10 charts: bar, column, donut, line, stacked bar — each mapped to a specific business question |
+| **Charts** | 10 charts: bar, column, donut, line, stacked bar each mapped to a specific business question |
 | **Slicers** | 5 global filters (Sales Person, Wilayah, Kategori, Channel, Promo) wired to all charts |
 | **Dashboard** | Single-canvas executive layout |
 
@@ -132,7 +132,7 @@ With **84 transactions**, Rok led all categories. Whether volume leadership tran
 ### 🔁 Early retention signal is real
 **Returning customers (49) outnumbered new customers (35)** in the first month of observation. A 58% repeat rate in month one is a healthy anchor but the trend over subsequent months will reveal whether this is organic loyalty or the tail end of an acquisition campaign.
 
-### 🎯 Promos are channelled online — but ROI is unverified
+### 🎯 Promos are channelled online but ROI is unverified
 Promo transactions accounted for **~36% of all sales**, skewing disproportionately toward online. The business doesn't yet know whether these are incremental purchases or discounted replacements of full-price intent. The Promo × Channel cross-tab built in Stage 1 creates the foundation to answer this with the next month's data.
 
 ### 💳 Transfer dominates, but E-Wallet momentum is the trend to watch
@@ -166,17 +166,6 @@ From-Data-to-Dashboard-Visualizing-with-Excel/
     ├── excel-dashboard.png
     └── powerbi-dashboard.png
 ```
-
----
-
-## What's Next
-
-March 2025 is the baseline. With recurring monthly data, this system evolves into:
-
-- **Month-over-month trend tracking** is Jakarta's dominance growing or narrowing?
-- **Promo ROI calculation** revenue lift vs. discount cost, broken down by channel
-- **Sales person consistency analysis** one strong month vs. repeatable performance
-- **Forecasting layer** extend to Python/Prophet for demand-side projection
 
 ---
 
