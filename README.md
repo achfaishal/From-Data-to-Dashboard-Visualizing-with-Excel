@@ -1,21 +1,27 @@
-# Weekly Task 3 — From Data to Dashboard: Visualizing with Excel
+# From Data to Dashboard: Retail Sales Analysis with Excel
 
-A hands-on Excel analytics task working with retail sales data from a fashion business operating across five Indonesian cities. The goal was to build a clean, interactive dashboard using Pivot Tables, charts, and slicers — entirely in Excel.
+Proyek ini adalah latihan end-to-end analisis data menggunakan Microsoft Excel, mulai dari data transaksi mentah yang berantakan, sampai jadi dashboard interaktif yang bisa difilter.
+
+Datanya adalah data penjualan fashion retail fiktif selama Maret 2025, mencakup 5 sales person, 5 kota, dan berbagai dimensi transaksi seperti kategori produk, channel penjualan, metode pembayaran, dan tipe customer.
 
 ---
 
-## What This Project Covers
+## Dashboard Preview
 
-Starting from raw transactional data, I cleaned, analyzed, and visualized sales performance across multiple dimensions: by sales person, product category, region, channel, promo status, payment method, and customer type.
+![Dashboard](assets/dashboard.png)
 
-The full workflow:
+---
 
-1. **Data cleaning** — standardized inconsistent casing and whitespace in the raw data
-2. **Pivot Table analysis** — 9 pivot tables covering key business dimensions
-3. **Chart creation** — 10 charts (bar, column, pie/donut, line, stacked bar)
-4. **Interactive slicers** — global filters for Sales Person, Wilayah, Kategori, Channel, and Promo
-5. **Dashboard layout** — all charts and slicers assembled in one canvas
-6. **Narrative insight** — key business findings summarized from the visuals
+## Apa yang Dikerjakan
+
+Data mentahnya punya masalah klasik: inkonsistensi kapitalisasi nama dan spasi ekstra di kolom wilayah. Sebelum bisa dianalisis, data harus dibersihkan dulu.
+
+Setelah itu, gua bangun 9 Pivot Table untuk menjawab pertanyaan bisnis yang berbeda-beda, lalu visualisasikan hasilnya ke 9 jenis chart. Semuanya dihubungkan lewat 5 global slicer sehingga dashboard bisa difilter secara real-time tanpa perlu ubah data.
+
+**Workflow:**
+```
+Raw Data → Data Cleaning → Pivot Table → Chart → Slicer → Dashboard → Insight
+```
 
 ---
 
@@ -23,78 +29,92 @@ The full workflow:
 
 | Item | Detail |
 |---|---|
-| Period | March 2025 (1–31 March) |
-| Transactions | ~400+ rows of sales records |
-| Sales Persons | Andi Wijaya, Budi Santoso, Dewi Lestari, Siti Aisyah |
-| Regions | Jakarta, Bandung, Surabaya, Medan |
-| Categories | Hijab, Blouse, Rok, Sepatu, Tas |
-| Channels | Online, Offline |
+| Periode | 1–31 Maret 2025 |
+| Jumlah Transaksi | ~400 baris |
+| Sales Person | Andi Wijaya, Budi Santoso, Dewi Lestari, Siti Aisyah |
+| Wilayah | Jakarta, Bandung, Surabaya, Medan |
+| Kategori Produk | Hijab, Blouse, Rok, Sepatu, Tas |
+| Channel | Online, Offline |
+| Metode Pembayaran | Transfer, E-Wallet, Cash |
+| Tipe Customer | New, Returning |
 
 ---
 
-## Pivot Tables Built
+## Analisis yang Dibangun
 
-| # | Pivot Table | Metric |
+### Pivot Tables (9 tabel)
+
+| # | Dimensi Analisis | Metrik |
 |---|---|---|
 | 1 | Sales Person | Total Penjualan |
-| 2 | Category | Count of Transactions |
-| 3 | Wilayah (Region) | Total Penjualan |
-| 4 | Channel (Online vs Offline) | Count of Transactions |
-| 5 | Promo vs Non-Promo | % Contribution |
-| 6 | Payment Method | Count of Transactions |
-| 7 | Customer Type (New vs Returning) | Count of Transactions |
-| 8 | Date | Total Penjualan over time |
-| 9 | Promo × Channel | Cross-tab interaction |
+| 2 | Kategori Produk | Jumlah Transaksi |
+| 3 | Wilayah | Total Penjualan |
+| 4 | Channel (Online vs Offline) | Jumlah Transaksi |
+| 5 | Promo vs Non-Promo | % Kontribusi |
+| 6 | Metode Pembayaran | Jumlah Transaksi |
+| 7 | Tipe Customer (New vs Returning) | Jumlah Transaksi |
+| 8 | Tanggal Transaksi | Total Penjualan (time series) |
+| 9 | Promo × Channel | Cross-tab interaksi |
 
----
+### Charts (9 visualisasi)
 
-## Charts Built
-
-| # | Chart | Type |
+| Chart | Tipe | Insight yang Dituju |
 |---|---|---|
-| 10 | Sales by Sales Person | Bar Chart |
-| 11 | Sales by Category | Column Chart |
-| 12 | Sales by Region | Column Chart |
-| 13 | Online vs Offline Channel | Pie / Donut Chart |
-| 14 | Promo vs Non-Promo | Pie / Donut Chart |
-| 15 | Payment Method Composition | Pie / Donut Chart |
-| 16 | New vs Returning Customer | Bar Chart |
-| 17 | Sales Trend by Date | Line Chart |
-| 18 | Promo × Channel Interaction | Stacked Bar Chart |
+| Sales by Sales Person | Bar Chart | Performa individu |
+| Sales by Category | Column Chart | Kontribusi kategori |
+| Sales by Region | Column Chart | Distribusi geografis |
+| Online vs Offline | Donut Chart | Komposisi channel |
+| Promo vs Non-Promo | Donut Chart | Efektivitas promo |
+| Payment Method | Donut Chart | Preferensi pembayaran |
+| New vs Returning Customer | Bar Chart | Loyalitas customer |
+| Sales Trend by Date | Line Chart | Tren harian |
+| Promo × Channel | Stacked Bar | Interaksi kampanye per channel |
+
+### Interactive Slicers
+
+Dashboard bisa difilter secara global menggunakan 5 slicer: **Sales Person**, **Wilayah**, **Kategori**, **Channel**, dan **Promo**. Semua chart terhubung ke slicer yang sama, jadi filtering satu elemen langsung update seluruh dashboard.
 
 ---
 
 ## Key Findings
 
-- **Dewi Lestari** and **Budi Santoso** led in total penjualan, significantly ahead of other sales persons
-- **Jakarta** contributed the highest regional sales (Rp 11.4M), nearly double Surabaya and Medan
-- **Online channel** dominated transaction count (56 vs 28 offline), but offline transactions tended to have higher individual value
-- **Rok (skirts)** had the highest transaction count among categories (84 transactions)
-- **Transfer** was the most common payment method, followed by E-Wallet and Cash
-- **Returning customers** outnumbered new customers (49 vs 35), suggesting reasonable early retention
-- **Promo campaigns** accounted for ~36% of transactions — with stronger promo uptake on the online channel
+**Sales Performance**
+- Dewi Lestari (Rp 17.4M) dan Budi Santoso (Rp 16.2M) mendominasi total penjualan, jauh di atas Siti Aisyah dan Andi Wijaya
+- Jakarta menjadi wilayah dengan penjualan tertinggi (Rp 11.4M): hampir dua kali lipat Surabaya dan Medan
+
+**Channel & Transaksi**
+- Online mendominasi jumlah transaksi (56 vs 28 offline), tapi transaksi offline cenderung memiliki nilai lebih tinggi per transaksi
+- Transfer adalah metode pembayaran paling dominan (35 transaksi), diikuti E-Wallet (32) dan Cash (17)
+
+**Customer & Promo**
+- Returning customer (49) lebih banyak dari new customer (35): sinyal awal loyalitas yang cukup baik untuk data satu bulan
+- Promo berkontribusi ~36% dari total transaksi, dengan konsentrasi lebih tinggi di channel online
+
+**Kategori Produk**
+- Rok memiliki jumlah transaksi tertinggi (84 transaksi) — kategori volume driver
+- Total GMV keseluruhan: **Rp 47.6 Juta** dalam 31 hari
+
+---
+
+## Struktur Repo
+
+```
+From-Data-to-Dashboard-Visualizing-with-Excel/
+├── README.md
+├── .gitignore
+├── data/
+│   └── Jawaban Weekly Task 3_From Data to Dashboard.xlsx
+└── assets/
+    └── dashboard.png
+```
 
 ---
 
 ## Tools
 
-| Tool | Usage |
+| Tool | Kegunaan |
 |---|---|
-| Microsoft Excel | Pivot Tables, Charts, Slicers, Dashboard |
-
----
-
-## File Structure
-
-```
-weekly-task-excel/
-├── README.md
-├── .gitignore
-├── data/
-│   └── Jawaban_Weekly_Task_3_From_Data_to_Dashboard.xlsx
-└── assets/
-    └── (dashboard screenshots — optional, add if available)
-```
+| Microsoft Excel | Data cleaning, Pivot Table, Chart, Slicer, Dashboard |
 
 ---
 
