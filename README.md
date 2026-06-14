@@ -80,14 +80,14 @@ Dashboard bisa difilter secara global menggunakan 5 slicer: **Sales Person**, **
 
 **Sales Performance**
 - Dewi Lestari (Rp 17.4M) dan Budi Santoso (Rp 16.2M) mendominasi total penjualan, jauh di atas Siti Aisyah dan Andi Wijaya
-- Jakarta menjadi wilayah dengan penjualan tertinggi (Rp 11.4M) — hampir dua kali lipat Surabaya dan Medan
+- Jakarta menjadi wilayah dengan penjualan tertinggi (Rp 11.4M): hampir dua kali lipat Surabaya dan Medan
 
 **Channel & Transaksi**
 - Online mendominasi jumlah transaksi (56 vs 28 offline), tapi transaksi offline cenderung memiliki nilai lebih tinggi per transaksi
 - Transfer adalah metode pembayaran paling dominan (35 transaksi), diikuti E-Wallet (32) dan Cash (17)
 
 **Customer & Promo**
-- Returning customer (49) lebih banyak dari new customer (35) — sinyal awal loyalitas yang cukup baik untuk data satu bulan
+- Returning customer (49) lebih banyak dari new customer (35): sinyal awal loyalitas yang cukup baik untuk data satu bulan
 - Promo berkontribusi ~36% dari total transaksi, dengan konsentrasi lebih tinggi di channel online
 
 **Kategori Produk**
